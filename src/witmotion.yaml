@@ -1,0 +1,38 @@
+- name: Time
+  id: 0x50
+  fields:
+    - {name: YY, type: uint8}
+    - {name: MM, type: uint8}
+    - {name: DD, type: uint8}
+    - {name: hh, type: uint8}
+    - {name: mm, type: uint8}
+    - {name: ss, type: uint8}
+    - {name: ms, type: uint16}
+
+# Temp: value / 100 C
+# Accel: value / 2^16 * 16g, g = 9.8m/s^2
+- name: Acceleration
+  id: 0x51
+  fields:
+    - {name: ax, type: int16}
+    - {name: ay, type: int16}
+    - {name: az, type: int16}
+    - {name: temperature, type: int16}
+
+# Velocity: value / 2^16 * 2000 deg/sec
+- name: AngularVelocity
+  id: 0x52
+  fields:
+    - {name: wx, type: int16}
+    - {name: wy, type: int16}
+    - {name: wz, type: int16}
+    - {name: temperature, type: int16}
+
+# Angle: value / 2^16 * 180 deg
+- name: Angle
+  id: 0x53
+  fields:
+    - {name: roll, type: int16}
+    - {name: pitch, type: int16}
+    - {name: yaw, type: int16}
+    - {name: version, type: uint16}
