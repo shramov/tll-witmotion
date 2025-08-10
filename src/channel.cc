@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: MIT
+// SPDX-FileCopyrightText: Pavel Shramov <shramov@mexmat.net>
+
 #include <tll/channel/module.h>
 #include <tll/channel/prefix.h>
 #include <tll/channel/tcp.h>
