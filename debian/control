@@ -1,0 +1,14 @@
+Source: tll-witmotion
+Section: devel
+Priority: optional
+Maintainer: Pavel Shramov <shramov@mexmat.net>
+Build-Depends: debhelper-compat (= 13), meson, pkg-config, libfmt-dev, libtll-dev
+Standards-Version: 4.7.2
+Vcs-Git: https://github.com/shramov/tll-witmotion
+
+Package: libtll-witmotion
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Pre-Depends: ${misc:Pre-Depends}
+Multi-Arch: same
+Description: Protocol decoder for WitMotion angular sensors
